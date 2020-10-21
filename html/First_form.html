@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Login Form</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form>
+        <div>
+            <label for="name1">First Name:</label>
+            <input name ="first" id="name1" type="text" placeholder="John" required>
+            <label for="name2">Last Name:</label>
+            <input name="last" id="name2" type="text" placeholder="Smith" required>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" required>
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio">
+            <label for="other">Other</label>
+            <input name="gender" id="other" type="radio">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id = "email" type="email" placeholder="your email" required>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+        </div>
+        <div>
+            <label>
+                Birthday:
+                <select name="birthday" id="month">
+                    <option value="" disabled selected>Month</option>
+                    <option>January</option>
+                    <option>Febuary</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select name="birthday" id="day">
+                    <option value="" disabled selected>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                </select>
+                <select name="birthday" id="Year">
+                    <option value="" disabled selected>Year</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>Every Year</option>
+                </select>
+            </label>
+            
+        </div>
+        <div>
+            <label for="t&c">I agree to the terms and conditions</label>
+            <input name="agreed" id ="t&c" type="checkbox">
+        </div>
+
+        <input type="submit">    
+    </form>
+
+
+</body>
+</html>

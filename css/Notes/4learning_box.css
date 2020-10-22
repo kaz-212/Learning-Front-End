@@ -1,0 +1,12 @@
+p { 
+    /* width of box - 50% = %of entire page - 200px = 200 px*/
+    width: 50%;
+    /* height: ; */
+    border: 2px solid blue;
+    /* padding: 10px; */
+    padding-left: 40px;
+    /* top, right, bottom, left (auto automatically centres it) */
+    /* margin: 0 auto 0 auto; same as below*/
+    margin: 0 auto; 
+
+}

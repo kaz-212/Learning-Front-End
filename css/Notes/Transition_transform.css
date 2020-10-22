@@ -1,0 +1,33 @@
+/* opacity: - governs how much element should be see through */
+div {
+  opacity: 0.6;
+}
+
+/* position: (static; relative; absolute; fixed; sticky;)*/
+div {
+  position: sticky;
+}
+
+/* TRANSITION allows us to animate the transition of one property value to another property value*/
+/* inside trainsition can specify just background-color or anything */
+/* also timing functions - transitions happen at different speeds */
+/* can specify a property, duration, timing function, delay*/
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: magenta;
+  transition: 1s;
+}
+.circle:hover {
+  background-color: cyan;
+  border-radius: 50%;
+}
+
+/* TRANSFORM */
+h1{
+  transform: rotate(45deg);
+  transform: scale(0.5);
+  transform: translate(50, -100) skew(10deg, 5deg);
+
+}

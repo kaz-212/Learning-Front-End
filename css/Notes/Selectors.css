@@ -1,0 +1,74 @@
+/* CASCADE - most recent/lowest styling takes precedent. Also can type !important befre semicolon and makes it take precident over everything */
+
+/* Universal Selector - selects everything */
+* {
+  color:black;
+}
+
+/* element selector - all things of given type e.g. img, h1, p */
+/* can compine with a comma */
+button, p {
+  font-size: 30px;
+}
+
+/* id selector */
+#username {
+  color: red;
+}
+
+/* class selector */
+.headers {
+  color: blue;
+}
+
+/* adjacent selector - selects only p that come directly after h1 (not nested or children but on the same level */
+h1 + p {
+  color: teal;
+}
+
+/* descendent selector - any li thats in a div*/
+div li {
+  color: white;
+}
+/* direct descendent/direct child selector - selects one level down child  */
+div > li {
+  color: white;
+}
+
+/* attribute selector - select all input elements where the type attribute is set to 'text' */
+input[type="text"] {
+  width: 300px;
+  color: yellow;
+}
+
+/* PSEUDO CLASSES - keyword added to a selector that specifies a special state of the selected element(s) */
+
+/* :hover - when anchor tag hovered over, turn orange */
+a:hover {
+  background-color: orange;
+}
+
+/* :active - when clicked  */
+button:active {
+   background-color: greenyellow;
+}
+
+/* nth-of type(3n) - every third post */
+.post:nth-of-type(3n) {
+  color: blanchedalmond;
+}
+
+/* PSEUDO ELEMENTS - keyword added to a selector that lets you style a particular part of selected element(s)*/
+/* ::first-letter - hits dat first letter*/
+h2::first-letter {
+  font-size: 500px;
+}
+
+p::first-line {
+  color: rebeccapurple;
+}
+
+/* ::selection- when selected/highlighted */
+p::selection {
+  background-color:sandybrown ;
+}

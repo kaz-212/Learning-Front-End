@@ -1,0 +1,37 @@
+#tm {
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+}
+
+#ml {
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+#m {
+    border: solid black 2px;
+}
+
+#mr {
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+#bm {
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+}
+table {
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    text-align: center;
+}

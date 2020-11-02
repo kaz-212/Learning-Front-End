@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <!-- <link rel="stylesheet" href="bootstrap.css"> THIS IS LOCAL, BELOW IS ONLINE - DOES SAME THING -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Bootstrap Basics</h1>
+    <!-- 2 button classes below, copiedd and pasted from bootstrap 3 website -->
+    <button class="btn btn-success btn-xs"> Click me!</button>
+    <button class="btn btn-success btn-xs active"> Click me!</button>
+    <button class="btn btn-success btn-xs disabled" > Click me!</button>
+
+    <a href="https://getbootstrap.com/docs/3.3/css/#buttons" class="btn btn-info">Bootstrap 3 Button Docs</a>
+    <!-- class container -> centres things and gives a wee bit of padding round it -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>This is a Jumbotron</h1>
+            <p>I typed this as quick as I can. It is not that quick though. I'm still working on my speed</p>
+            <button class="btn btn-success btn-lrg">Hi There!</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+    </div>
+</body>
+</html>

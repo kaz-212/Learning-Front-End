@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grid</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style type="text/css">
+.pink {
+  background: pink;
+  border: solid 2px purple;
+}
+.orange {
+  background: orange;
+  border: dashed 1px red;
+}
+</style>
+<!-- bootstrap grids need to be in a container  -->
+<!-- bootstrap grid split into 12 equal parts  -->
+<!-- when lg-1 means, when the screen is large (large desktop), take up 1 slot. md-2 means that when screen becomes med size, we want it to take up 2 units out of 12 (so they stack up) -->
+<body>
+
+  <div class="container">
+    <!-- <div class="row">
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+      <div class="col-lg-1 col-md-2 pink">Col Lg 1</div>
+    </div> -->
+
+    <!-- dont need to set large to be 3 cus it will just take what we've set to be medium as large -->
+    <div class="row">
+      <div class="col-md-3 col-sm-6 pink"> 
+        <div class="row">
+          <div class="col-lg-6 orange">Col Lg 6</div>
+          <div class="col-lg-6 orange">Col Lg 6</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 pink"> Col Lg 3</div>
+      <div class="col-md-3 col-sm-6 pink"> Col Lg 3</div>
+      <div class="col-md-3 col-sm-6 pink"> 
+        <div class="row">
+          <div class="col-lg-2 orange"> 2</div>
+          <div class="col-lg-2 orange"> 2</div>
+          <div class="col-lg-2 orange"> 2</div>
+          <div class="col-lg-2 orange"> 2</div>
+          <div class="col-lg-2 orange"> 2</div>
+          <div class="col-lg-2 orange"> 2</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

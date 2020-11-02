@@ -1,0 +1,36 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /* this decides main direction is left to right. also column or column-reverse or row-reverse */
+    flex-direction: row; 
+    /* with reference to the flex direction */
+    justify-content: space-around; 
+    /* this sets whether items are forced onto one line or can wrap onto multiple lines. wrap-reverse changes cross axess */
+    flex-wrap: wrap; 
+    /* align-content changes space between items if they are wrapped */
+    align-content: center;
+    /* align-items, alligns on cross axis (not main axis)(ususally vertical axis) */
+    align-items: center;
+}
+#container div {
+  width: 200px;
+  height: 200px;
+  /* flex-basis: 400px; sets the width of the element along the main axis (so could be width or height) */
+}
+
+div:nth-of-type(1) {
+  /* makes the first div, take up all of the aditional left over space */
+  flex-grow: 1;
+  /* can just use flex: flex-grow|flex-shrink|flex-basis */
+  /* flex-shrink decides how fast something should shrink when the screen is made smaller */
+}

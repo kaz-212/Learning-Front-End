@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping-Pong Score Counter</title>
+  <link rel="stylesheet" href="ping-pong.css">
+</head>
+<body>
+  <h2>0 - 0</h2>
+  <p>Use the buttons below to keep score</p>
+  <form action="/dog">
+    <label for="playTo">Playing to:</label>
+    <select type="selector" name="playTo" id="playTo">
+      <option value="5">5</option>
+      <option value="7">7</option>
+      <option value="9">9</option>
+      <option value="11">11</option>
+      <option value="15">15</option>
+      <option value="21">21</option>
+      <option value="25">25</option>
+    </select>
+    <div>
+      <button id="p1">+1 Player One</button>
+      <button id="p2">+1 Player Two</button>
+      <button id="reset">Reset</button>
+    </div>
+  </form>
+
+  
+  <script src="ping-pong.js"></script>
+</body>
+</html>
